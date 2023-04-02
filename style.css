@@ -1,0 +1,177 @@
+
+:root{
+    --cor--titulo--primario: #ffff;
+    --cor--titulo--secundario: #c0c0c0;
+    --cor--botao--azul: #167bf7;
+    --cor--fundo:#00030c;
+    --fonte--principal: 'Inter';
+}
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    background-color: var(--cor--fundo);
+    color: var(--cor--titulo--primario);
+    font-family: var(--fonte--principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.container__principal{
+    background-image: url(./assets/Background.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;                   /*Aqui eu defino que o BG img vai preencher todo o espaco do meu container (class) */                                  
+    display: grid;                              /*Aqui usei o grid pra alguma coisa, tipo um pré requisito pra ter duas colunas, o padrão são linhas sobre linhas. É MT IMPORTANTE ESSE CONTEUDO ESTAR EM UMA DIV*/
+    grid-template-columns: 50% 50%;             /*Aqui o grid dividiu o conteúdo em 2 colunas com lados iguais*/
+    padding: 115px 50px 0px 100px;
+}
+.container__titulo{
+    width: 550px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+.container__imagem__combo{                      /*Para centralizar a imagem, coloquei uma classe nela pra aplicar paddings apenas nela*/
+    padding: 1rem 0 2rem 6.5rem;
+}
+.container__link{
+    background-color: var(--cor--botao--azul);
+    display: block;                             /*Aqui ele pega a largura do botao e faz preencher todo o bloco do grid*/
+    border-radius: 5px;
+    padding: 1rem;                              /*O padding NO LINK SEMPRE vai aumentar o tamanho do "botão"*/
+    color: var(--cor--titulo--primario);
+    text-decoration: none;
+    text-align: center;
+    width: 512px; 
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+.container__link__secundario{
+    border: solid 1px var(--cor--titulo--secundario);
+    display: block;                             /*Aqui ele pega a largura do botao e faz preencher todo o bloco do grid*/
+    border-radius: 5px;
+    padding: 1rem;                              /*O padding NO LINK SEMPRE vai aumentar o tamanho do "botão"*/
+    color: var(--cor--titulo--primario);
+    text-decoration: none;
+    width: 512px;
+    text-align: center;  
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+.container__aviso{
+    color: var(--cor--titulo--secundario);
+    font-size: 0.75rem;
+    padding-left: 5rem;
+}
+
+
+.container__secundario{
+    display: grid;                              /*O grid deve ser copiado para as outras sections pra manter a estrutura ou fazer alguma coisa diferente. É MT IMPORTANTE ESSE CONTEUDO ESTAR EM UMA DIV*/
+    grid-template-columns: 50% 50%; 
+    align-items: center;
+    padding: 0% 10% 10% 10%;
+}
+.container__imagem__plataforma{
+    width: 80%;
+    margin: 0% 0% 0% 10%;
+}
+.container__secundario__descricao__titulo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--fonte--principal);
+    margin-bottom: 0.2rem;
+    justify-content: s;
+}
+.container__secundario__paragrafo{
+    font-weight: 400;
+    color: var(--cor--titulo--secundario);
+    width: 588px;
+}
+
+
+.container__terceiro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 0% 10% 10% 10%;
+}
+.container__terceiro__imagem{
+    width: 70%;
+}
+.container__terceiro__paragrafo{
+    color: var(--cor--titulo--secundario);
+    font-size: 1rem;
+    width: 588px;
+    line-height: 150%;
+    margin-bottom: 2%;
+}
+.container__terceiro__link{
+    background-color: var(--cor--botao--azul);
+    display: block;
+    border-radius: 5px;
+    padding: 1rem;                              /*O padding NO LINK SEMPRE vai aumentar o tamanho do "botão"*/
+    color: var(--cor--titulo--primario);
+    text-decoration: none;
+    text-align: center;
+    width: 170px; 
+}
+.container__terceiro__link:hover{
+    background-color: transparent;
+    border: solid 0.5px var(--cor--titulo--secundario);
+}
+
+
+.dispositivos{
+    text-align: center;
+    padding: 3% 0%;
+}
+.dispositivos__titulo{
+    font-size: 3rem;
+    color: var(--cor--titulo--primario);
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 5%;
+    padding: 5% 0% 1% 0%;
+    margin-bottom: 5%;
+    color: var(--cor--titulo--primario);
+}
+.lista__item{
+    font-size: 2rem;
+}
+
+
+.container__footer{
+    text-align: center;
+    height: 300px;          /*tamanho do footer*/
+}
+.teste{
+    padding: 2% 0%;
+    color: var(--cor--titulo--secundario);
+}
+.teste2{
+    padding: 0% 10%;
+    color: var(--cor--titulo--secundario);  
+    text-align: center;
+}
+.container__footer__imagem{
+    margin-bottom: 2%;
+}
+.container__footer__links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1rem;
+}
+.container__footer__links__link{
+    text-decoration: none;
+    color: var(--cor--titulo--primario);
+}
+.container__footer__links__link:hover{
+    color: var(--cor--botao--azul);
+}
+.container__footer__links__link:active{
+    color: purple;
+}
